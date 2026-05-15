@@ -3,168 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student-Kit</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css-style/style.css">
+
 </head>
-<body>
-    <aside>
-        <nav>
+<body class="flex bg-gray-200 text-[14px]">
+    <aside class="bg-[#d49a44] w-[20%] pt-2 rounded-r-lg relative sticky left-0 h-100vh ">
+
+        <div class="w-[100%] pt-2 "><a href="" class="text-[22px] font-bold text-white p-5 rounded-sm">Student Kit</a></div>
+        <div class="bg-gray-200 h-1"></div>
+        <nav class="p-4 pt--2">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Quizzes</a></li>
-                <li><a href="#">WACE</a></li>
-                <li><a href="#">GSCE</a></li>
-                <li><a href="#">Result Checker</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="mb-1 p-2 pl-5"><a href="#">Home</a></li>
+                <li class="mb-1 p-2 pl-5"><a href="#">News</a></li>
+                <li class="mb-1 p-2 pl-5"><a href="#">Quizzes</a></li>
+                <li class="mb-1 p-2 pl-5"><a href="#">WACE</a></li>
+                <li class="mb-1 p-2 pl-5"><a href="#">GSCE</a></li>
+                <li class="mb-1 p-2 pl-5"><a href="#">Result Checker</a></li>
+                <li class="mb-1 p-2 pl-5"><a href="#">About Us</a></li>
+                <li class="mb-1 p-2 pl-5"><a href="#">Contact</a></li>
             </ul>
         </nav>
+
+        <a href="" class="ml-3 p-2 font-bold">Log Out</a>
     </aside>
 
-    <main>
+    <main class=" h-screen w-[85%] overflow-scroll">
         <!-- Hero Section -->
         <div class="hero-section">
 
             <!-- hero-text -->
             <div class="hero-text">
-                <h1>All your Examination Resources in One Place</h1>
+                <h1 class="text-4xl">All your Examination Resources in One Place</h1>
                 <p>This is Student Resource Hub</p>
             </div>
 
-            <div>
-                <div>
-                    <div>
-                        <button>ACCESS NOW</button>
-                        <button>CONTACT US</button>
+            <div class="hero ">
+                <div class="hero-img w-2full  h-90">
+                    <div class="flex p-5 button-div pt-75">
+                        <button class="p-2 pl-4 pr-4 rounded-lg">ACCESS NOW</button>
+                        <button class="p-2 pl-4 pr-4 rounded-lg">CONTACT US</button>
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- News Section -->
-        <div class="news-sec">
-            <div><h2>News</h2></div>           
+        <div class="news-sec bg-[#c28b37] pb-8">
+            <div class="bg-white w-50 p-3 ">
+                <div class=" text-xl text-center"><h2 class="">News</h2></div>
+                <div class=" w-20 item-center bg-[#d49a44] h-[2px] ml-12"></div>
+            </div>         
             
-            <div class="news-1">
-                <p>The WASSCE is on process</p>
+            <div class="news-1 p-6">
+                <p class="text-2xl">The WASSCE 2026 is on process</p>
 
-                <div class="blog-div">
-                    <div></div>
+                <div class="news-div flex mt-2 gap-5 bg-white rounded-sm">
+                    <div class="news-1-img w-5/4 h-50 rounded-l-sm"></div>
 
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut praesentium natus dolores voluptate inventore, impedit quis et vel sed dignissimos voluptas quo quidem! Quia, consectetur.</p>
+                    <div class="mt-6 p-2">
+                        <p class="w-4/4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut praesentium natus dolores voluptate inventore, impedit quis et vel. <br>Click the link delow </p>
 
-                        <a href="">WACE syllabus</a>
-                        <a href="">View timetable</a>
+                        <a href="" class="underline text-blue-500">WACE syllabus</a>
+                        <a href="" class="underline text-blue-500">View timetable</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="news-1 p-6">
+                <p class="text-2xl">The BECE 2026 starts in June</p>
+
+                <div class="news-div flex mt-2 gap-5 bg-white rounded-sm">
+                    <div class="news-1-img w-5/4 h-50 rounded-l-sm"></div>
+
+                    <div class="mt-6 p-2">
+                        <p class="w-4/4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut praesentium natus dolores voluptate inventore, impedit quis et vel. <br>Click the link delow </p>
+
+                        <a href="" class="underline text-blue-500">WACE syllabus</a>
+                        <a href="" class="underline text-blue-500">View timetable</a>
                     </div>
 
                 </div>
             </div>
 
-            <div class="news-2">
-                <p>The NPSE has been completed</p>
-
-                <div class="blog-div">
-                    <div></div>
-
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut praesentium natus dolores voluptate inventore, impedit quis et vel sed dignissimos voluptas quo quidem! Quia, consectetur.</p>
-
-                        <a href="">WACE syllabus</a>
-                        <a href="">View timetable</a>
-                    </div>
-
-                </div>
-            </div>
         </div>
 
         <!-- Past Questions -->
-        <div>
-            <div><h2>Past Questions</h2></div>
+        <div class="bg-[#c28b37] ">
+            <div class="bg-white w-50 p-3 ">
+                <div class=" text-xl text-center"><h2 class="">Past Questions</h2></div>
+                <div class=" w-20 item-center bg-[#d49a44] h-[2px] ml-12"></div>
+            </div>
 
             <div>
                 <!-- NPSE -->
-                <div>
-                    <div>
-                        <h3>NPSE</h3>
+                <div class=" bg-gray-200 p-6 m-8">
+                    <div class="past-header">
+                        <h3 class="text-lg">NPSE</h3>
                     </div>
 
-                    <div>
-                        <div><p>General Mathematics</p></div>
-                        <div><p>Quantitative</p></div>
-                        <div><p>English Language</p></div>
-                        <div><p>Verbal Attitude</p></div>
-                        <div><p>Essay Writing</p></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
+                        <div class="bg-white rounded-sm p-4"><p>Mathematics</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Quantitative</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>English Language</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>General Paper</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Verbal Attitude</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Essay Writing</p></div>
+                    </div>  
+                </div>
+
+                <!-- BECE -->
+                <div class=" bg-gray-200 p-6 m-8">
+                    <div class="past-header">
+                        <h3 class="text-lg">BECE</h3>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
+                        <div class="bg-white rounded-sm p-4"><p>Mathematics</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Integrated Science</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>English Language</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Social Studies</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Business Studies</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Languages</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Essay Writing</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Physical and Health Education</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Literature in English</p></div>
                     </div>  
                 </div>
                 
-                <!-- BECE -->
-                <div>
-                    <div>
-                        <h3>BECE</h3>
-                    </div>
-                    
-                    <div>
-                        <div><p>General Mathematics</p></div>
-                        <div><p>Quantitative</p></div>
-                        <div><p>English Language</p></div>
-                        <div><p>Verbal Attitude</p></div>
-                        <div><p>Essay Writing</p></div>
-                    </div>
-                </div>
-
+                
                 <!-- WASSCE -->
-                <div>
-                    <div>
-                        <h3>WASSCE</h3>
+                <div class=" bg-gray-200 p-6 m-8">
+                    <div class="past-header">
+                        <h3 class="text-lg">WASSCE</h3>
                     </div>
-                    
-                    <div>
-                        <div><p>General Mathematics</p></div>
-                        <div><p>Sciences & Technology</p></div>
-                        <div><p>English Language</p></div>
-                        <div><p>Civic Education &Social Studies</p></div>
-                        <div><p>Essay Writing</p></div>
-                        <div><p>Arts & Humanities</p></div>
-                        <div><p>Business & Commerce</p></div>
-                        <div><p>Vocational & Home Economics</p></div>
 
-                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
+                        <div class="bg-white rounded-sm p-4"><p>General Mathematics</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Sciences & Technology</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>English Language</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Civic Education &Social Studies</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Business Studies</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Arts & Humanities</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Essay Writing</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Business & Commerce</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Vocational & Home Economics</p></div>
+                    </div>  
                 </div>
 
-                <!-- GCSE -->
-                <div>
-                    <div>
-                        <h3>GCSE</h3>
+                <!-- IGCSE -->
+                <div class=" bg-gray-200 p-6 m-8">
+                    <div class="past-header">
+                        <h3 class="text-lg">IGCSE</h3>
                     </div>
-                    
-                    <div>
-                        <div><p>General Mathematics</p></div>
-                        <div><p>Sciences & Technology</p></div>
-                        <div><p>English Language</p></div>
-                        <div><p>Civic Education &Social Studies</p></div>
-                        <div><p>Essay Writing</p></div>
-                        <div><p>Arts & Humanities</p></div>
-                        <div><p>Business & Commerce</p></div>
-                        <div><p>Vocational & Home Economics</p></div>
 
-                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
+                        <div class="bg-white rounded-sm p-4"><p>General Mathematics</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Sciences & Technology</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>English Language</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Civic Education &Social Studies</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Business Studies</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Arts & Humanities</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Essay Writing</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Business & Commerce</p></div>
+                        <div class="bg-white rounded-sm p-4"><p>Vocational & Home Economics</p></div>
+                    </div>  
                 </div>
-            </div>
+
         </div>
 
         <!-- Result Checker -->
         <div>
-            <div>
-                <h2>Results Out!</h2>
+            <div class="bg-white w-50 p-3 ">
+                <div class=" text-xl text-center"><h2 class="">Results Out!</h2></div>
+                <div class=" w-20 item-center bg-[#d49a44] h-[2px] ml-12"></div>
             </div>
 
-            <div>
-                <div>
-                    <div></div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, libero!</p>
+            <div class="mt-6">
+                <div class="p-5 flex h-50">
+                    <div class="results-img w-80 "></div>
+                    <div class="bg-white result-text p-6">
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, libero!</p>
 
-                        <button>CHECK NOW!</button>
+                        <button class="bg-yellow-100 p-3 mt-4 ml-40">CHECK NOW!</button>
                     </div>
                 </div>
             </div>
@@ -218,7 +240,11 @@
             </div>
         </div>
 
+        <footer>
+            <p>&copy;student-kits All right preserved</p>
+        </footer>
     </main>
+
 
 
 </body>
