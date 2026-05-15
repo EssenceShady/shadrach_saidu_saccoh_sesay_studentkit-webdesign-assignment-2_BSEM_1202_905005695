@@ -1,5 +1,5 @@
 .hero-img {
-    background: url(/images/images.jpeg);
+    background: url(/images/hero-img.jpeg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     justify-content: space-between;
@@ -37,7 +37,12 @@ aside nav li:hover {
 }
 
 .news-1-img {
-    background: url(/images/images.jpeg);
+    background: url(/images/wassce.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.news-2-img {
+    background: url(/images/bece.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -47,8 +52,9 @@ aside nav li:hover {
 }
 
 .results-img {
-    background: url(/images/images.jpeg);
+    background: url(/images/results.jpg);
     background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .results-text button:hover {
@@ -191,9 +197,7 @@ aside nav li:hover {
     margin-top: 15px;
 }
 
-/* =========================
-   TABLET RESPONSIVE
-========================= */
+/* TABLET RESPONSIVE */
 @media (max-width: 992px) {
 
     body {
