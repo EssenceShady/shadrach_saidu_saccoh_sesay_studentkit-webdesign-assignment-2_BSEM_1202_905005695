@@ -9,6 +9,8 @@
 
 </head>
 <body class="flex bg-gray-200 text-[14px]">
+    <button id="menuBtn" class="mobile-menu-btn">☰</button>
+
     <aside class="bg-[#d49a44] w-[20%] pt-2 rounded-r-lg relative sticky left-0 h-100vh ">
 
         <div class="w-[100%] pt-2 "><a href="" class="text-[22px] font-bold text-white p-5 rounded-sm">Student Kit</a></div>
@@ -275,7 +277,14 @@
         </footer>
     </main>
 
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const aside = document.querySelector("aside");
 
+        menuBtn.addEventListener("click", function () {
+            aside.classList.toggle("show-sidebar");
+        });
+    </script>
 
 </body>
 </html>
