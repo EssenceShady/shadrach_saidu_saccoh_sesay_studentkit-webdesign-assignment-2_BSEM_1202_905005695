@@ -67,6 +67,21 @@ aside nav li:hover {
     
 }
 
+.result-button {
+    /* background-color: #d49a44; */
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.result-button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #d49a44;
+    border: 1px solid #d49a44;
+}
+
 .contact-section {
     /* background-color: #f3f4f6; */
     /* padding: 40px; */
